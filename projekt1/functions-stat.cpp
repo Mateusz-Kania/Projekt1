@@ -172,7 +172,7 @@ std::string askAQuestion(std::string question) {
 	return message;
 }
 
-void recognizeArguments(std::string argNames[], std::string argValues[], int argArraySize, int argc, char * argv[]) {
+void recognizeArguments(std::string argNames[], std::string argValues[], int argArraySize, int argc, char * argv[], bool &help) {
 	for (int i = 1; i < argc; ++i) {
 		std::cout << argv[i];
 		for (int j = 0; j < argArraySize; ++j) {
@@ -187,8 +187,7 @@ void recognizeArguments(std::string argNames[], std::string argValues[], int arg
 			}
 		}
 		if (strcmp(argv[i], "-h") == 0) {
-			std::cout << "what";
-			argValues[2] = "y";
+			help = true;
 		}
 
 	}

@@ -18,6 +18,6 @@ struct results {
 struct results calculateResults(std::string fileName);
 char saveResultsToFile(std::string fileName, struct results results);
 char identifySign(char c);
-void recognizeArguments(std::string argNames[], std::string argValues[], int argArraySize, int argc, char * argv[]);
+void recognizeArguments(std::string argNames[], std::string argValues[], int argArraySize, int argc, char * argv[],bool &help);
 std::string askAQuestion(std::string question);
 #endif
