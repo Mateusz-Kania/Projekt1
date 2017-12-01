@@ -1,0 +1,7 @@
+Liczba samog³osek:5
+Liczba spó³g³osek:11
+Liczba cyfr:0
+Liczba s³ów:3
+Liczba wierszy:3
+Liczba bia³ych znaków:2
+Maksymalna liczba znaków w wierszu:6
