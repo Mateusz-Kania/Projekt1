@@ -174,7 +174,6 @@ std::string askAQuestion(std::string question) {
 
 void recognizeArguments(std::string argNames[], std::string argValues[], int argArraySize, int argc, char * argv[], bool &help) {
 	for (int i = 1; i < argc; ++i) {
-		std::cout << argv[i];
 		for (int j = 0; j < argArraySize; ++j) {
 			if (argNames[j] == argv[i]) {
 
